@@ -101,7 +101,8 @@
 			<top>870</top>
 			<width>140</width>
 			<height>60</height>
-			<visible>[Player.DisplayAfterSeek + IntegerGreaterThan(Player.ChapterCount,0)] | IntegerGreaterThan(MusicPlayer.PlaylistLength,0)</visible>
+			<visible>[Player.DisplayAfterSeek + IntegerGreaterThan(Player.ChapterCount,0)] | IntegerGreaterThan(MusicPlayer.PlaylistLength,0) | !IsEmpty(Player.SeekStepSize)</visible>
+			<visible>True</visible>
 
 			<!-- Background -->
 			<control type="image">
@@ -118,7 +119,7 @@
 				<align>center</align>
 				<label>[B]$INFO[Player.Chapter,(,/]$INFO[Player.ChapterCount,,)][/B][B]$INFO[MusicPlayer.PlaylistPosition,(,/]$INFO[MusicPlayer.PlaylistLength,,)][/B]</label>
 				<textcolor>DialogColor2</textcolor>
-				<visible>!Window.IsVisible(visualisation)</visible>
+				<visible>!Window.IsVisible(visualisation) + IsEmpty(Player.SeekStepSize)</visible>
 			</control>
 
 			<!-- Status -->
@@ -129,8 +130,20 @@
 				<align>center</align>
 				<label>[B]$INFO[MusicPlayer.PlaylistPosition,(,/]$INFO[MusicPlayer.PlaylistLength,,)][/B]</label>
 				<textcolor>DialogColor2</textcolor>
-				<visible>Window.IsVisible(visualisation)</visible>
+				<visible>Window.IsVisible(visualisation) + IsEmpty(Player.SeekStepSize)</visible>
 			</control>
+
+			<!-- Status -->
+			<control type="label">
+				<width>140</width>
+				<height>60</height>
+				<font>Font27</font>
+				<align>center</align>
+				<visible>!IsEmpty(Player.SeekStepSize)</visible>
+				<label>$INFO[Player.SeekStepSize]</label>
+				<textcolor>DialogColor2</textcolor>
+			</control>
+
 
 		</control>
 

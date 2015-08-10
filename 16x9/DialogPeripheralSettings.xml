@@ -10,13 +10,13 @@
 		<include>DialogBackgroundImage</include>
 
 		<!-- Heading label -->
-		<control type="label">
+		<control type="label" id="2">
 			<left>150</left>
 			<top>96</top>
 			<width>1620</width>
 			<height>72</height>
 			<font>Font72</font>
-			<label>31169</label>
+			<label>-</label>
 		</control>
 
 		<!-- Grouplist -->
@@ -32,6 +32,16 @@
 			<ondown>9001</ondown>
 			<orientation>vertical</orientation>
 			<scrolltime tween="sine" easing="out">240</scrolltime>
+		</control>
+
+		<!-- Default label -->
+		<control type="label" id="14">
+			<width>1200</width>
+			<height>42</height>
+			<font>Font33</font>
+			<align>center</align>
+			<label>-</label>
+			<textcolor>TextColor1</textcolor>
 		</control>
 
 		<!-- Default button -->

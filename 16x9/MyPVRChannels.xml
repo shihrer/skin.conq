@@ -455,6 +455,16 @@
 						<label>19270</label>
 						<visible>Window.IsActive(TVRecordings) | Window.IsActive(RadioRecordings)</visible>
 					</control>
+					<!-- Show hidden channels -->
+					<control type="radiobutton" id="6">
+						<include>OptionButtons</include>
+						<label>19051</label>
+					</control>
+					<!-- Filter -->
+					<control type="radiobutton" id="31">
+						<include>OptionButtons</include>
+						<label>587</label>
+					</control>
 				</control>
 
 				<!-- More controls -->

@@ -236,7 +236,7 @@
 
 			<!-- Controls -->
 			<control type="grouplist">
-				<width>360</width>
+				<width>420</width>
 				<height>60</height>
 				<itemgap>0</itemgap>
 				<onleft>18</onleft>

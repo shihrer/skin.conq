@@ -26,6 +26,7 @@
 				<height>48</height>
 				<font>Font48</font>
 				<textcolor>DialogColor1</textcolor>
+				<label>-</label>
 			</control>
 
 			<!-- Grouplist -->
@@ -41,6 +42,16 @@
 				<ondown>noop</ondown>
 				<orientation>vertical</orientation>
 				<scrolltime tween="sine" easing="out">240</scrolltime>
+			</control>
+
+			<!-- Default label -->
+			<control type="label" id="14">
+				<width>750</width>
+				<height>42</height>
+				<font>Font33</font>
+				<align>center</align>
+				<label>-</label>
+				<textcolor>TextColor1</textcolor>
 			</control>
 
 			<!-- Default button -->
