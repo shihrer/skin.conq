@@ -268,7 +268,18 @@
 						<aspectratio>keep</aspectratio>
 						<font>Font30</font>
 						<align>right</align>
-						<label>$INFO[Container(50).ListItem.NextTitle,$LOCALIZE[19031]: ,]$INFO[Container(50).ListItem.NextStartTime, (,)]</label>
+						<label>$INFO[Container(50).ListItem.NextTitle,$LOCALIZE[19031]: ,][CR]$INFO[Container(50).ListItem.NextStartTime, (,)]</label>
+					</control>
+					<!-- Next program time -->
+					<control type="label">
+						<right>0</right>
+						<top>540</top>
+						<width>512</width>
+						<height>30</height>
+						<aspectratio>keep</aspectratio>
+						<font>Font30</font>
+						<align>right</align>
+						<label>$INFO[Container(50).ListItem.NextStartTime]</label>
 					</control>
 
 				</control>

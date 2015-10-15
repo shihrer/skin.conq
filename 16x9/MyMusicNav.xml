@@ -144,12 +144,6 @@
 						<label>-</label>
 						<onfocus>Down</onfocus>
 					</control>
-					<!-- View -->
-					<control type="button" id="99">
-						<include>OptionButtons</include>
-						<label>$INFO[Container.ViewMode]</label>
-						<onclick>Container.NextViewMode</onclick>
-					</control>
 					<!-- Fanart -->
 					<control type="radiobutton" id="98">
 						<include>OptionButtons</include>
