@@ -89,7 +89,7 @@
 						<width>38</width>
 						<height>40</height>
 						<texture>pvr/Timer.png</texture>
-						<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
+						<visible>[ListItem.HasTimer | ListItem.HasTimerSchedule] + !ListItem.IsRecording</visible>
 					</control>
 
 				</itemlayout>
@@ -133,7 +133,7 @@
 						<width>38</width>
 						<height>40</height>
 						<texture>pvr/Timer.png</texture>
-						<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
+						<visible>[ListItem.HasTimer | ListItem.HasTimerSchedule] + !ListItem.IsRecording</visible>
 					</control>
 
 				</focusedlayout>

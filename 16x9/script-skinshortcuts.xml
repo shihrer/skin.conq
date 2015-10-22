@@ -199,8 +199,6 @@
 			<control type="button" id="10">
 				<width>200</width>
 				<label>186</label>
-				<onback condition="StringCompare(Window.Property(groupname),mainmenu)">RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;group=mainmenu|shutdown)</onback>
-				<onclick condition="StringCompare(Window.Property(groupname),mainmenu)">RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;group=mainmenu|shutdown)</onclick>
 				<onclick>Close</onclick>
 			</control>
 
@@ -208,13 +206,6 @@
 			<control type="button" id="308">
 				<width>400</width>
 				<label>$ADDON[script.skinshortcuts 32028]</label>
-			</control>
-
-			<!-- Reset all -->
-			<control type="button" id="999">
-				<width>400</width>
-				<onclick>RunScript(script.skinshortcuts,type=resetall)</onclick>
-				<label>$ADDON[script.skinshortcuts 32037]</label>
 			</control>
 
 		</control>

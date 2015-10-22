@@ -545,6 +545,15 @@
 					<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=mainmenu)</onclick>
 					<visible>ControlGroup(9).HasFocus(10)</visible>
 				</control>
+				<!-- Reset all -->
+				<control type="button" id="999">
+					<width>1200</width>
+					<height>66</height>
+					<textwidth>1120</textwidth>
+					<label>$ADDON[script.skinshortcuts 32037]</label>
+					<onclick>RunScript(script.skinshortcuts,type=resetall)</onclick>
+					<visible>ControlGroup(9).HasFocus(10)</visible>
+				</control>
 				<!-- Hide submenu headings -->
 				<control type="radiobutton" id="1214">
 					<width>1200</width>

@@ -144,6 +144,12 @@
 						<label>-</label>
 						<onfocus>Down</onfocus>
 					</control>
+					<!-- View -->
+					<control type="button" id="99">
+						<include>OptionButtons</include>
+						<label>$INFO[Container.ViewMode]</label>
+						<onclick>Container.NextViewMode</onclick>
+					</control>
 					<!-- Fanart -->
 					<control type="radiobutton" id="98">
 						<include>OptionButtons</include>
@@ -269,13 +275,6 @@
 					<control type="radiobutton" id="16">
 						<include>OptionButtons</include>
 						<label>589</label>
-					</control>
-					<!-- Files -->
-					<control type="button" id="92">
-						<include>OptionButtons</include>
-						<label>744</label>
-						<onclick>ReplaceWindow(MusicFiles)</onclick>
-						<selected>Window.IsVisible(MusicLibrary)</selected>
 					</control>
 					<!-- Settings -->
 					<control type="button" id="95">
