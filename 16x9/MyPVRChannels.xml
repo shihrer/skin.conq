@@ -108,7 +108,7 @@
 						<width>38</width>
 						<height>40</height>
 						<texture>pvr/Timer.png</texture>
-						<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
+						<visible>[ListItem.HasTimer | ListItem.HasTimerSchedule] + !ListItem.IsRecording</visible>
 					</control>
 
 					<!-- Progress -->
@@ -192,7 +192,7 @@
 						<width>38</width>
 						<height>40</height>
 						<texture>pvr/Timer.png</texture>
-						<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
+						<visible>[ListItem.HasTimer | ListItem.HasTimerSchedule] + !ListItem.IsRecording</visible>
 					</control>
 
 					<!-- Progress -->
@@ -268,7 +268,18 @@
 						<aspectratio>keep</aspectratio>
 						<font>Font30</font>
 						<align>right</align>
-						<label>$INFO[Container(50).ListItem.NextTitle,$LOCALIZE[19031]: ,]$INFO[Container(50).ListItem.NextStartTime, (,)]</label>
+						<label>$INFO[Container(50).ListItem.NextTitle,$LOCALIZE[19031]: ,][CR]$INFO[Container(50).ListItem.NextStartTime, (,)]</label>
+					</control>
+					<!-- Next program time -->
+					<control type="label">
+						<right>0</right>
+						<top>540</top>
+						<width>512</width>
+						<height>30</height>
+						<aspectratio>keep</aspectratio>
+						<font>Font30</font>
+						<align>right</align>
+						<label>$INFO[Container(50).ListItem.NextStartTime]</label>
 					</control>
 
 				</control>
@@ -454,6 +465,16 @@
 						<include>OptionButtons</include>
 						<label>19270</label>
 						<visible>Window.IsActive(TVRecordings) | Window.IsActive(RadioRecordings)</visible>
+					</control>
+					<!-- Show hidden channels -->
+					<control type="radiobutton" id="6">
+						<include>OptionButtons</include>
+						<label>19051</label>
+					</control>
+					<!-- Filter -->
+					<control type="radiobutton" id="31">
+						<include>OptionButtons</include>
+						<label>587</label>
 					</control>
 				</control>
 

@@ -155,22 +155,22 @@
 
 						<!-- Recording image -->
 						<control type="image">
-							<left>8</left>
-							<top>32</top>
-							<width>30</width>
-							<height>30</height>
+							<left>6</left>
+							<top>68</top>
+							<width>18</width>
+							<height>18</height>
 							<texture>pvr/Recording.png</texture>
 							<visible>ListItem.IsRecording</visible>
 						</control>
 
 						<!-- Timer image -->
 						<control type="image">
-							<left>8</left>
-							<top>28</top>
-							<width>38</width>
-							<height>40</height>
+							<left>6</left>
+							<top>68</top>
+							<width>18</width>
+							<height>18</height>
 							<texture>pvr/Timer.png</texture>
-							<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
+							<visible>[ListItem.HasTimer | ListItem.HasTimerSchedule] + !ListItem.IsRecording</visible>
 						</control>
 
 					</itemlayout>
@@ -197,22 +197,22 @@
 
 						<!-- Recording image -->
 						<control type="image">
-							<left>8</left>
-							<top>32</top>
-							<width>30</width>
-							<height>30</height>
+							<left>6</left>
+							<top>68</top>
+							<width>18</width>
+							<height>18</height>
 							<texture>pvr/Recording.png</texture>
 							<visible>ListItem.IsRecording</visible>
 						</control>
 
 						<!-- Timer image -->
 						<control type="image">
-							<left>8</left>
-							<top>28</top>
-							<width>38</width>
-							<height>40</height>
+							<left>6</left>
+							<top>68</top>
+							<width>18</width>
+							<height>18</height>
 							<texture>pvr/Timer.png</texture>
-							<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
+							<visible>[ListItem.HasTimer | ListItem.HasTimerSchedule] + !ListItem.IsRecording</visible>
 						</control>
 
 					</focusedlayout>
@@ -252,11 +252,11 @@
 					<control type="textbox">
 						<left>880</left>
 						<width>800</width>
-						<height>124</height>
+						<height>140</height>
 						<align>justify</align>
 						<textcolor>TextColor1</textcolor>
 						<shadowcolor>ShadowColor</shadowcolor>
-						<label fallback="161">$INFO[ListItem.Plot]</label>
+						<label fallback="161">$VAR[Plot]</label>
 					</control>
 
 				</control>
@@ -899,7 +899,7 @@
 							<width>38</width>
 							<height>40</height>
 							<texture>pvr/Timer.png</texture>
-							<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
+							<visible>[ListItem.HasTimer | ListItem.HasTimerSchedule] + !ListItem.IsRecording</visible>
 						</control>
 
 						<!-- Program name -->
@@ -969,7 +969,7 @@
 							<width>38</width>
 							<height>40</height>
 							<texture>pvr/Timer.png</texture>
-							<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
+							<visible>[ListItem.HasTimer | ListItem.HasTimerSchedule] + !ListItem.IsRecording</visible>
 						</control>
 
 						<!-- Program name -->

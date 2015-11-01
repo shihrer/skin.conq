@@ -393,6 +393,11 @@
 						<label>19270</label>
 						<visible>Window.IsActive(TVRecordings) | Window.IsActive(RadioRecordings)</visible>
 					</control>
+					<!-- Show deleted recordings -->
+					<control type="radiobutton" id="7">
+						<include>OptionButtons</include>
+						<label>19184</label>
+					</control>
 				</control>
 
 				<!-- More controls -->

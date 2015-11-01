@@ -547,6 +547,12 @@
 							<label>-</label>
 							<onfocus>Down</onfocus>
 						</control>
+						<!-- Check for updates -->
+						<control type="button" id="9">
+							<include>OptionButtons</include>
+							<label>24034</label>
+							<visible>Control.IsEnabled(9)</visible>
+						</control>
 						<!-- Auto update -->
 						<control type="button" id="5">
 							<include>OptionButtons</include>

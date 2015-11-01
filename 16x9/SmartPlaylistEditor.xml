@@ -10,13 +10,13 @@
 		<include>DialogBackgroundImage</include>
 
 		<!-- Heading -->
-		<control type="label" id="0">
+		<control type="label" id="2">
 			<left>150</left>
 			<top>96</top>
 			<width>1620</width>
 			<height>72</height>
 			<font>Font72</font>
-			<label>21432</label>
+			<label>-</label>
 		</control>
 
 		<!-- Left group -->

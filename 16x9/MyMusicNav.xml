@@ -276,13 +276,6 @@
 						<include>OptionButtons</include>
 						<label>589</label>
 					</control>
-					<!-- Files -->
-					<control type="button" id="92">
-						<include>OptionButtons</include>
-						<label>744</label>
-						<onclick>ReplaceWindow(MusicFiles)</onclick>
-						<selected>Window.IsVisible(MusicLibrary)</selected>
-					</control>
 					<!-- Settings -->
 					<control type="button" id="95">
 						<include>OptionButtons</include>

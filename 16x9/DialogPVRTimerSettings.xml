@@ -33,6 +33,16 @@
 			<orientation>vertical</orientation>
 		</control>
 
+		<!-- Default label -->
+		<control type="label" id="14">
+			<width>1200</width>
+			<height>42</height>
+			<font>Font33</font>
+			<align>center</align>
+			<label>-</label>
+			<textcolor>TextColor1</textcolor>
+		</control>
+
 		<!-- Default button -->
 		<control type="button" id="7">
 			<width>1200</width>

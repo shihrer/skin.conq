@@ -36,6 +36,7 @@
 		<value condition="Window.IsVisible(programs) + Skin.HasSetting(Headings)">$LOCALIZE[0]</value>
 		<value condition="[Window.IsVisible(settings) | Window.IsVisible(SettingsCategory.xml) | Window.IsVisible(skinsettings) | Window.IsVisible(systeminfo) | Window.IsVisible(addonbrowser) | Window.IsVisible(profiles) | Window.IsVisible(filemanager)] + Skin.HasSetting(Headings)">$LOCALIZE[5]</value>
 		<value condition="Window.IsVisible(weather) + Skin.HasSetting(Headings)">$LOCALIZE[8]</value>
+		<value condition="Window.IsVisible(eventlog) + Skin.HasSetting(Headings)">$LOCALIZE[14111]</value>
 	</variable>
 
 	<variable name="PVRChannelIcon">
@@ -234,7 +235,7 @@
 	</variable>
 
 	<variable name="SongLabel">
-		<value condition="Container.Content(songs)">$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Title]</value>
+		<value condition="Container.Content(songs) + !IsEmpty(ListItem.TrackNumber)">$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Title]</value>
 		<value>$INFO[ListItem.Label]</value>
 	</variable>
 

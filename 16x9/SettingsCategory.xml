@@ -367,6 +367,16 @@
 			<visible>!IsEmpty(Window(settings).Property(ChangeSettingsLevel))</visible>
 		</control>
 
+		<!-- Default label -->
+		<control type="label" id="14">
+			<width>970</width>
+			<height>42</height>
+			<font>Font33</font>
+			<align>center</align>
+			<label>-</label>
+			<textcolor>TextColor1</textcolor>
+		</control>
+
 		<!-- Default group button -->
 		<control type="button" id="10">
 			<width>970</width>
