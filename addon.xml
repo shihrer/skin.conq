@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
-	id="skin.conq"
+	id="skin.conqplus"
 	version="2.3.0"
-	name="Conq"
-	provider-name="Hitcher">
+	name="Conq+"
+	provider-name="Hitcher, ScrewAttackThis">
 	<requires>
 		<import addon="xbmc.gui" version="5.10.0"/>
 		<import addon="script.favourites" version="5.0.2"/>
