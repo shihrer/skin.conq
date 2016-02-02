@@ -314,7 +314,6 @@
 					<height>306</height>
 					<texture colordiffuse="88f1f1f1" background="true">$INFO[ListItem.Icon]</texture>
 					<aspectratio align="center" aligny="bottom">keep</aspectratio>
-					<bordertexture border="1,1,1,36">views/DropShadowSmall.png</bordertexture>
 					<bordersize>0,0,0,33</bordersize>
 				</control>
 				<control type="image">
@@ -324,7 +323,6 @@
 					<height>273</height>
 					<texture colordiffuse="00ffffff">$INFO[ListItem.Icon]</texture>
 					<aspectratio align="center" aligny="bottom">keep</aspectratio>
-					<bordertexture border="14,14,14,100">views/OverlayEffectSmall.png</bordertexture>
 					<visible>Skin.HasSetting(Overlays)</visible>
 				</control>
 			</itemlayout>
@@ -337,7 +335,6 @@
 					<height>306</height>
 					<texture colordiffuse="88f1f1f1" background="true">$INFO[ListItem.Icon]</texture>
 					<aspectratio align="center" aligny="bottom">keep</aspectratio>
-					<bordertexture border="1,1,1,36">views/DropShadowSmall.png</bordertexture>
 					<bordersize>0,0,0,33</bordersize>
 					<visible>!Control.HasFocus(9002)</visible>
 				</control>
@@ -348,7 +345,6 @@
 					<height>306</height>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
 					<aspectratio align="center" aligny="bottom">keep</aspectratio>
-					<bordertexture border="1,1,1,36">views/DropShadowSmall.png</bordertexture>
 					<bordersize>0,0,0,33</bordersize>
 					<visible>Control.HasFocus(9002)</visible>
 				</control>
@@ -359,7 +355,6 @@
 					<height>273</height>
 					<texture colordiffuse="00ffffff">$INFO[ListItem.Icon]</texture>
 					<aspectratio align="center" aligny="bottom">keep</aspectratio>
-					<bordertexture border="14,14,14,100">views/OverlayEffectSmall.png</bordertexture>
 					<visible>Skin.HasSetting(Overlays)</visible>
 				</control>
 			</focusedlayout>
