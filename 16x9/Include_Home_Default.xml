@@ -27,7 +27,7 @@
 				<effect type="slide" start="-460,0" end="0,0" time="160" tween="sine" easing="out" />
 			</animation>
 
-			<itemlayout width="460" height="120">
+			<itemlayout width="460" height="70">
 				<control type="label">
 					<left>0</left>
 					<top>0</top>
