@@ -1,6 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<variable name="WidgetContent">
+		<!-- Paths -->
+		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),RecentMovies)">plugin://service.library.data.provider?type=recentmovies&amp;reload=$INFO[Window.Property(recentmovies)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),RecommendedMovies)">plugin://service.library.data.provider?type=recommendedmovies&amp;reload=$INFO[Window.Property(recommendedmovies)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),RandomMovies)">plugin://service.library.data.provider?type=randommovies&amp;reload=$INFO[Window.Property(randommovies)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),RecentEpisodes)">plugin://service.library.data.provider?type=recentepisodes&amp;reload=$INFO[Window.Property(recentepisodes)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),RecommendedEpisodes)">plugin://service.library.data.provider?type=recommendedepisodes&amp;reload=$INFO[Window.Property(recommendedepisodes)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),RandomEpisodes)">plugin://service.library.data.provider?type=randomepisodes&amp;reload=$INFO[Window.Property(randomepisodes)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),RecentAlbums)">plugin://service.library.data.provider?type=recentalbums&amp;reload=$INFO[Window.Property(recentalbums)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),RecommendedAlbums)">plugin://service.library.data.provider?type=recommendedalbums&amp;reload=$INFO[Window.Property(recommendedalbums)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(Widget),RandomAlbums)">plugin://service.library.data.provider?type=randomalbums&amp;reload=$INFO[Window.Property(randomalbums)]</value>
+	</variable>
+	
+	<variable name="WidgetArt">
+		<value condition="SubString(Container(9000).ListItem.Property(Widget),Episodes,Right)">$INFO[ListItem.Art(tvshow.poster)]</value>
+		<value condition="SubString(Container(9000).ListItem.Property(Widget),Movies,Right)">$INFO[ListItem.Art(poster)]</value>
+		<value>$INFO[ListItem.Icon]</value>
+	</variable>
 
+	<variable name="WidgetTitle">
+		<value condition="SubString(Container(9000).ListItem.Property(Widget),Episodes,Right)">[B]$INFO[ListItem.Season]$INFO[ListItem.Episode,x]$INFO[ListItem.Title,. ][/B]</value>
+		<value condition="SubString(Container(9000).ListItem.Property(Widget),Movies,Right)">[B]$INFO[ListItem.Title][/B]</value>
+		<value>
+			[B]$INFO[ListItem.Label][/B]
+		</value>
+	</variable>
+
+	<variable name="WidgetHeading">
+      	<value condition="SubString(Container(9000).ListItem.Property(Widget),Episodes,Right)">$INFO[Container(9002).ListItem.TVshowTitle] - [UPPERCASE]$INFO[Container(9002).ListItem.Property(episodeno)][/UPPERCASE]</value>
+		<value condition="SubString(Container(9000).ListItem.Property(Widget),Movies,Right)">$INFO[Container(9002).ListItem.Title]$INFO[Container(9002).ListItem.Year, (,)]</value>
+		<value>$INFO[Container(9002).ListItem.Label]</value>
+  	</variable>
 	<variable name="HeadingLabel">
 		<value condition="Container.Content(movies) + Skin.HasSetting(Headings)">$LOCALIZE[342]</value>
 		<value condition="Container.Content(tvshows) + Skin.HasSetting(Headings)">$LOCALIZE[20343]</value>
